@@ -1,21 +1,20 @@
 import Image from "next/image";
 import Button from "./Button";
-import Card from "./Card";
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container flex flex-col gap-20 py-20 pb-32 md:gap-28 lg:py-20 xl:flex-row">
+    <section className="max-container padding-container flex flex-col gap-20 py-32 md:gap-28 lg:py-36 xl:flex-row">
 
       {/* Left Side */}
       <div className="relative z-20 flex flex-col xl:w-1/2">
         <Image
-          src="/camp.svg"
+          src="/paws.png"
           alt="camp"
-          width={50}
-          height={50}
-          className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
+          width={70}
+          height={70}
+          className="absolute left-[-5px] top-[-35px] w-10 lg:w-[50px]"
         />
-        <h1 className="bold-52 lg:bold-88">Spare Valley Nature Retreat</h1>
+        <h1 className="bold-64 md:bold-88">Spare Valley Nature Retreat</h1>
         <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
           Join us on your journeys to discover the unspoiled beauty of nature.
           Our app is your ultimate companion, guiding you on a global adventure

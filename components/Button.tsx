@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 type ButtonProps = {
   type: "button" | "submit";
@@ -10,7 +12,9 @@ type ButtonProps = {
 
 const Button = ({ type, title, icon, variant, full }: ButtonProps) => {
   return (
-    <button
+    <motion.button
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
       className={`flexCenter gap-3 rounded-full border ${variant} ${
         full && "w-full"
       }`}
@@ -20,8 +24,7 @@ const Button = ({ type, title, icon, variant, full }: ButtonProps) => {
       <label className="bold-16 whitespace-nowrap cursor-pointer">
         {title}
       </label>
-    </button>
-    
+    </motion.button>
   );
 };
 
