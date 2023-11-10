@@ -14,7 +14,8 @@ const Hero = () => {
           height={70}
           className="absolute left-[-5px] top-[-35px] w-10 lg:w-[50px]"
         />
-        <h1 className="bold-64 md:bold-88">Spare Valley Nature Retreat</h1>
+        <h1 className="bold-64 md:bold-88">Your Gateway to the Wild.</h1>
+        <h2 className="text-4xl text-green-50 font-bold">Discover, Explore, Protect!</h2>
         <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
           Join us on your journeys to discover the unspoiled beauty of nature.
           Our app is your ultimate companion, guiding you on a global adventure
